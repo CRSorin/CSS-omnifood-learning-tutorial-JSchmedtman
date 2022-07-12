@@ -11,6 +11,7 @@
   /* Fixed height because we want header to be sticky */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -25,7 +26,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -56,6 +57,25 @@
   background-color: #cf711f;
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* **************************** */
 /* HERO SECTION */
 /* **************************** */
@@ -69,7 +89,7 @@
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
@@ -307,7 +327,7 @@
   align-items: center;
 }
 
-.testimonials-conntainer {
+.testimonials-container {
   padding: 9.6rem;
 }
 
@@ -474,6 +494,7 @@
 
 .cta {
   display: grid;
+  /* 2/3 + 1/3 */
   grid-template-columns: 2fr 1fr;
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
@@ -482,7 +503,7 @@
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
   /* TEMP */
-  height: 50rem;
+  /* height: 50rem; */
 }
 
 .cta-text-box {
